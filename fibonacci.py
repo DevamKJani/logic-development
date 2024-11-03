@@ -6,9 +6,12 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 
-num = int(input("Enter the position for Fibonacci series: "))
-for i in range(num):
-    print(fibonacci(i), end=" ")
+x = int(input("Enter number whose fibonacci series you want: "))
+if x <= 0:
+    print(0)
+else:
+    for i in range (x):
+        print(fibonacci(i), end = " ")
 
 # LOGIC EXPLANATION:
 
